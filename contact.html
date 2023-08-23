@@ -1,0 +1,205 @@
+<html>
+<head>
+    <style>
+     *
+{
+    box-sizing:border-box;
+	
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+
+
+header 
+{
+    background-image: url(001.jpg);
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body
+{
+    background:gray;
+	margin:0;
+}
+
+.contact-box
+{
+    width:500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 20%;
+    left: 60%;
+    ri
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+form
+{
+    margin: 35px;
+}
+.input-field
+{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border : 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.textarea-field
+{
+    height: 150px;
+    padding-top: 10px;
+}
+
+.btn
+{
+    border-radius: 20px;
+    color:#fff;
+    margin-top: 18px;
+    background-color: #06921b;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+}
+
+ul
+{
+	float: left;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li
+{
+	display: inline-block;
+}
+ul li a
+{
+	text-decoration: none;
+	color: white;
+	padding: 6px 25px;
+	border: 1px solid ;
+	transition: 0.3s;
+}
+ul li a:hover
+{
+	background-color: pink;
+	color: black;
+}
+.logo img
+{
+	float: left;
+    padding-right: 15px;
+	width: 100;
+	height: auto;
+}
+
+.main
+{
+	max-width: 1400;
+	margin: 0;
+}
+#gallery
+{
+    width:100%;
+    padding :70px 0;
+    background:black;
+}
+
+.title-text h1
+{
+    position: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size : 3.8rem;
+
+}
+.service-box
+{
+    width :80%;
+    display :flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin : auto;
+}
+
+.service-box .single-service img{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.service-box .single-service:hover img{
+    transform: scale(1.5);
+}
+
+.single-service
+{
+    flex-basis : 48%;
+    text-align: center;
+    border-radius : 7px;
+    margin-bottom: 20px;
+    color :white;
+    position: relative;
+}
+
+.single-service img
+{
+    padding-top: 10%;
+    width :100%;
+    border-radius: 7px;
+}
+
+.overlay
+{
+    width : 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),pink);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-service:hover .overlay
+{
+    opacity:1;
+}
+    </style>
+    
+    <title>Contact me</title>
+    <link rel="stylesheet"c:\Users\BeautyThakur\Desktop\codesoftlevel1_task2-main\style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+        <div class="logo">
+            <img src="d:\des\codesoftlevel1_task2-main\002.jpg"/>
+        </div>
+        <ul>
+            <li><a href="d:\des\codesoftlevel1_task2-main\CODSOFTlevel1TASK-2.html"> HOME</a></li>
+            <li><a href="#"> ABOUT ME</a></li>
+            <li><a href="d:\des\codesoftlevel1_task2-main\contact.html"> CONTACT</a></li>
+            <li><a href="d:\des\codesoftlevel1_task2-main\hireme.html"> HIRE ME</a></li>
+        </ul>
+    </header>
+    <div class="contact-box">
+        <form>
+            <input type="text" class="input-field" placeholder="Enter Your Name">
+            <input type="email" class="input-field" placeholder="Enter Your E-mail">
+            <input type="text" class="input-field" placeholder="Subject">
+            <textarea type="text" class="input-field textarea-field" placeholder="Enter Your Message">
+
+            </textarea>
+            <button type="button" class="btn" onclick="alert('Your Message is Successfully Send')"> Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
